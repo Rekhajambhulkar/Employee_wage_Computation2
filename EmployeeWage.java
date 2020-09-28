@@ -42,5 +42,14 @@ default :
 	System.out.println("employee absent");
 	break;
 		}
-	}
+
+//Using while Loop Check total working hours or days is reached for a month
+while(totalHours <  Max_Hrs_In_Month && totalDays < WorkingDay_Per_Month)
+	{
+		totalHours+=1;
+		totalDays+=1;
+		int DailyWage=totalHours*totalDays*Wage_Per_Hour;
+		System.out.println("Wage is:"+DailyWage);
+		
+	}	}
 }
